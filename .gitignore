@@ -1,17 +1,54 @@
-# Python / venv
+# ── Environnements virtuels Python ───────────────────────────
 venv/
 .venv/
 env/
 ENV/
-.env/
-__pycache__/
-*.pyc
-build/
-__pycache__/
-*.pyc
-*.pyo
+.venv.bat
+.venv.ps1
 
-build/
+# ── Fichiers Python compilés / cache ─────────────────────────
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 *.pyo
+*.so
+
+# ── Build / distribution ─────────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+.Python
+
+# ── IDE / éditeurs ───────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Environnement / secrets ──────────────────────────────────
+.env
+*.env
+.env.local
+.env.*.local
+
+# ── Logs / données temporaires ───────────────────────────────
+*.log
+tmp/
+temp/
+*.tmp
+
+# ── FlowBoard spécifique ─────────────────────────────────────
+PySide6_data/favicons/
+PySide6_data/shortcuts.json
+PySide6_data/categories.json
+!PySide6_data/.gitkeep
+
+# ── Système d'exploitation ───────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── PyInstaller ──────────────────────────────────────────────
+*.spec
