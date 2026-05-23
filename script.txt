@@ -1,0 +1,20 @@
+# 1. Créer l'environnement 
+py -m venv venv
+
+# 2.activer l'environnement 
+.\venv\Scripts\Activate.ps1
+
+
+# 3. Installation des outils
+python -m pip install customtkinter pyinstaller
+
+# 4.Lancer l'application
+python main.py
+
+
+# 5.notoyage
+Remove-Item -Recurse -Force build, dist -ErrorAction SilentlyContinue
+
+
+# 6. Build avec icône
+python -m PyInstaller --noconsole --onefile --icon="icon.ico" --name "FlowBoard" main.py
